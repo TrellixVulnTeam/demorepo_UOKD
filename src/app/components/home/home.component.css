@@ -1,0 +1,114 @@
+
+.container-fluid{
+    background-color: #ededed;
+    height: 100vh;
+}
+.header{
+    height: 55px;
+    background-color: #fff;
+    /* border-bottom: solid 1px #ccc; */
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 250px;
+    height: 50px;
+    padding: 8px 5px;
+}
+.right-sec{
+    width: 170px;
+    height: 50px;
+    /* border: solid 1px #ccc; */
+   position: absolute;
+   right: 10px;
+   display: flex;
+}
+.right-sec mat-icon {
+  color: #9f9f9f;
+  padding: 16px 23px;
+  font-size: 28px;
+  cursor: pointer;
+}
+.right-sec mat-icon:hover{
+  color:#8237ff;
+}
+
+::ng-deep.mat-badge-content{
+  width: 18px!important;
+  height: 18px!important;
+  top: 4px!important;
+  line-height: 21px!important;
+}
+
+
+
+
+
+:host {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  :host ::ng-deep .mat-tab-labels {
+    flex-direction: column;
+   
+  }
+  
+  mat-tab-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  :host ::ng-deep .mat-tab-body-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    /* border-top-left-radius: 10px; */
+    margin-left: 28px;
+    background-color: #fff;
+    height: 500px!important;
+    margin-right: 28px;
+    border-radius: 10px;
+    border-bottom: solid 8px #aaa6d7;
+  }
+  
+  mat-tab-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  :host ::ng-deep mat-ink-bar {
+    display: none;
+  }
+
+  ::ng-deep.mat-tab-label-container{
+      height: 100vh;
+      background-color: #fff;
+      margin-top: 30px;
+      border-top-right-radius: 10px;
+  }
+  
+  /* Styles for the active tab label */
+  :host ::ng-deep.mat-tab-label.mat-tab-label-active {
+    background-color: transparent;
+    color: red;
+    background-image: linear-gradient(135deg, #435dd3 0%, #d2858b 100%);
+    border-right: 3px solid #8237ff;
+  }
+  /* Styles for the active tab label */
+  :host ::ng-deep.mat-tab-label {
+    background-color: transparent;
+    margin-top: 20px;
+    max-width: 80px;
+    min-width: 80px;
+    /* background-color: lightgray; */
+  }
+
+  .tab-container {
+    padding: 20px;
+}
+  
